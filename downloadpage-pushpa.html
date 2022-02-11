@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, user-scalable=no" />
+    <title>BygHub</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato&family=Oswald:wght@500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="div-logo">
+        <a href="#">BygHub</a>
+      </div>
+      <div class="div-search">
+        <div class="search">
+          <div class="icon"></div>
+          <div class="input">
+            <input
+              type="text"
+              value=""
+              placeholder="Search"
+              id="search"
+              onchange="openPage()"
+            />
+            <span
+              class="clear"
+              onclick="document.getElementById('search').value = ''"
+            ></span>
+          </div>
+        </div>
+
+        <div class="searchz active">
+          <div class="icon"></div>
+          <div class="input">
+            <input
+              type="text"
+              value=""
+              placeholder="Search"
+              id="searchz"
+              onchange="openPagez()"
+            />
+            <span
+              class="clear"
+              onclick="document.getElementById('searchz').value = ''"
+            ></span>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="head-area"></div>
+    <div class="div-content">
+      <div class="text1"><h1>Pushpa - The Rise (Part-1)</h1></div>
+      <div class="text2">
+        Click on the "Download" button below to start downloading the movie.
+      </div>
+      <div class="download">
+        <div class="download-btn">
+          <div class="p480"><a target="_blank" href="https://drive.google.com/file/d/1FBGXSLJivuGXzUFyfnPytTWxUT3TrHDu/view">Download</a></div>
+          <div class="p720"><a target="_blank" href="https://drive.google.com/file/d/1AwOE5_mmrNILuiopOuVmuFm9spz8wFEj/view">Download</a></div>
+        </div>
+        <div class="download-text">
+          <div class="textz">(480p)</div>
+          <div class="texty">(720p)</div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script>
+    const icon = document.querySelector(".icon");
+    const search = document.querySelector(".search");
+    icon.onclick = function () {
+      search.classList.toggle("active");
+    };
+
+    function openPagez() {
+      var x = document.getElementById("searchz").value;
+      if (x === "tadap" || x === "Tadap" || x === "TADAP" ) {
+        window.open("downloadpage-tadap.html");
+      }
+
+      if (x === "pushpa" || x === "Pushpa" || x === "PUSHPA" ) {
+        window.open("downloadpage-pushpa.html");
+      }
+      if (x === "loop lapeta" || x === "Loop lapeta" || x === "Loop Lapeta" || x === "LOOP LAPETA") {
+        window.open("downloadpage-looplapeta.html");
+      }
+    }
+
+
+
+
+    function openPage() {
+      var x = document.getElementById("search").value;
+      if (x === "tadap" || x === "Tadap" || x === "TADAP" ) {
+        window.open("downloadpage-tadap.html");
+      }
+      if (x === "pushpa" || x === "Pushpa" || x === "PUSHPA" ) {
+        window.open("downloadpage-pushpa.html");
+      }
+      if (x === "loop lapeta" || x === "Loop lapeta" || x === "Loop Lapeta" || x === "LOOP LAPETA") {
+        window.open("downloadpage-looplapeta.html");
+      }
+    }
+  </script>
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+    }
+
+    body {
+      background-color: #000;
+    }
+
+    ::-webkit-scrollbar {
+      width: 10px;
+    }
+
+    ::-webkit-scrollbar-track {
+      background: #fff;
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background: #f5c518;
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+      background: #bb9200;
+    }
+
+    header {
+      height: 60px;
+      width: 100%;
+      display: flex;
+      position: fixed;
+      background-color: #121212;
+    }
+
+    .div-logo {
+      height: 100%;
+      width: 20%;
+      text-align: center;
+    }
+    .head {
+      height: 60px;
+      width: 100%;
+      background-color: black;
+    }
+    .div-search {
+      height: 100%;
+      width: 80%;
+    }
+
+    header .div-logo a {
+      text-decoration: none;
+      color: #000;
+      padding: 3px 5px 3px 5px;
+      font-size: 22px;
+      background-color: #f5c518;
+      border-radius: 4px;
+      line-height: 60px;
+      font-family: "Lato", sans-serif;
+      font-family: "Oswald", sans-serif;
+    }
+
+    header .div-search .search {
+      position: absolute;
+      right: calc(-100% + 10%);
+      width: 50px;
+      height: 50px;
+      border-radius: 60px;
+      background-color: #fff;
+      transition: 0.5s;
+      margin: auto;
+      margin-top: 5px;
+      margin-right: calc(100% + 0px);
+      cursor: pointer;
+      overflow: hidden;
+    }
+
+    header .div-search .search.active {
+      width: 360px;
+    }
+
+    header .div-search .search .icon {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 50px;
+      height: 50px;
+      background-color: #f5c518;
+      border-radius: 60px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transition: 0.2s ease;
+    }
+
+    header .div-search .search .icon::before {
+      content: "";
+      position: absolute;
+      width: 15px;
+      height: 15px;
+      border: 3px solid #121212;
+      border-radius: 50%;
+      transform: translate(-4px, -4px);
+    }
+
+    header .div-search .search .icon::after {
+      content: "";
+      position: absolute;
+      width: 3px;
+      height: 12px;
+      background-color: #121212;
+      transform: translate(6px, 6px) rotate(315deg);
+    }
+
+    header .div-search .search .input {
+      position: relative;
+      width: calc(100% - 60px);
+      height: 50px;
+      left: 60px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+    }
+
+    header .div-search .search .input input {
+      position: absolute;
+      top: 0;
+      width: 100%;
+      height: 50px;
+      border: none;
+      outline: none;
+      font-size: 18px;
+      padding: 0 10px;
+      font-family: "Roboto", sans-serif;
+    }
+
+    header .div-search .search .clear {
+      position: absolute;
+      transform: translate(-50%);
+      width: 18px;
+      height: 18px;
+      right: 15px;
+      top: 17.5px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    header .div-search .search .clear::before {
+      position: absolute;
+      content: "";
+      width: 2px;
+      height: 18px;
+      background-color: #f5c518;
+      transform: rotate(45deg);
+    }
+
+    header .div-search .search .clear::after {
+      position: absolute;
+      content: "";
+      width: 2px;
+      height: 18px;
+      background-color: #f5c518;
+      transform: rotate(315deg);
+    }
+
+    header .div-search .search {
+      display: none;
+    }
+
+    header .div-search .searchz {
+      position: absolute;
+      right: calc(-100% + 10%);
+      width: 50px;
+      height: 50px;
+      border-radius: 60px;
+      background-color: #fff;
+      transition: 0.5s;
+      margin: auto;
+      margin-top: 5px;
+      margin-right: calc(100% + 0px);
+      cursor: pointer;
+      overflow: hidden;
+    }
+    header .div-search .searchz.active {
+      width: 360px;
+    }
+
+    header .div-search .searchz .icon {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 50px;
+      height: 50px;
+      background-color: #f5c518;
+      border-radius: 60px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transition: 0.2s ease;
+    }
+
+    header .div-search .searchz .icon::before {
+      content: "";
+      position: absolute;
+      width: 15px;
+      height: 15px;
+      border: 3px solid #121212;
+      border-radius: 50%;
+      transform: translate(-4px, -4px);
+    }
+
+    header .div-search .searchz .icon::after {
+      content: "";
+      position: absolute;
+      width: 3px;
+      height: 12px;
+      background-color: #121212;
+      transform: translate(6px, 6px) rotate(315deg);
+    }
+
+    header .div-search .searchz .input {
+      position: relative;
+      width: calc(100% - 60px);
+      height: 50px;
+      left: 60px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+    }
+
+    header .div-search .searchz .input input {
+      position: absolute;
+      top: 0;
+      width: 100%;
+      height: 50px;
+      border: none;
+      outline: none;
+      font-size: 18px;
+      padding: 0 10px;
+      font-family: "Roboto", sans-serif;
+    }
+
+    header .div-search .searchz .clear {
+      position: absolute;
+      transform: translate(-50%);
+      width: 18px;
+      height: 18px;
+      right: 15px;
+      top: 17.5px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    header .div-search .searchz .clear::before {
+      position: absolute;
+      content: "";
+      width: 2px;
+      height: 18px;
+      background-color: #f5c518;
+      transform: rotate(45deg);
+    }
+
+    header .div-search .searchz .clear::after {
+      position: absolute;
+      content: "";
+      width: 2px;
+      height: 18px;
+      background-color: #f5c518;
+      transform: rotate(315deg);
+    }
+    .head-area {
+      height: 60px;
+      background-color: #f5c518;
+      width: 100%;
+    }
+    .div-content .text1 {
+      margin-top: 5%;
+    }
+    .div-content .text1 h1 {
+      color: #fff;
+      font-family: "Roboto", sans-serif;
+    }
+    .div-content .text2 {
+      text-align: center;
+      color: #fff;
+      font-size: 22px;
+      margin-top: 8%;
+      font-family: "Roboto", sans-serif;
+    }
+    .download {
+      margin-top: 10%;
+    }
+    .div-content .download-btn {
+      text-align: center;
+      display: flex;
+    }
+    .div-content .download-btn .p480 {
+      width: 50%;
+    }
+    .div-content .download-btn .p720 {
+      width: 50%;
+    }
+    .div-content .download-btn .p480 a {
+      color: #000;
+      text-decoration: none;
+      padding: 10px;
+      background-color: #f5c518;
+      border-radius: 4px;
+      font-size: 38px;
+      font-family: "Roboto", sans-serif;
+      transition: 0.2s ease;
+    }
+    .div-content .download-btn .p720 a {
+      color: #000;
+      text-decoration: none;
+      padding: 10px;
+      background-color: #f5c518;
+      border-radius: 4px;
+      font-size: 38px;
+      font-family: "Roboto", sans-serif;
+      transition: 0.2s ease;
+    }
+    .div-content .download-btn a:hover {
+      background-color: #bb9200;
+    }
+    .download-text {
+      display: flex;
+      width: 100%;
+      margin-top: 5%;
+    }
+    .download-text .texty {
+      width: 50%;
+      color: #fff;
+      text-align: center;
+      font-size: 24px;
+      font-family: "Roboto", sans-serif;
+    }
+    .download-text .textz {
+      width: 50%;
+      color: #fff;
+      text-align: center;
+      font-family: "Roboto", sans-serif;
+      font-size: 24px;
+    }
+
+    @media (max-width: 864px) {
+      header .div-search .searchz {
+        display: none;
+      }
+
+      header .div-search .search {
+        display: block;
+      }
+    }
+
+    @media (max-width: 666px) {
+      header .div-search .search.active {
+        width: 80%;
+      }
+      header .div-logo {
+        text-align: right;
+        width: 35%;
+      }
+      header .div-search {
+        width: 65%;
+      }
+    }
+    .div-content {
+      height: 100%;
+      margin-left: 5%;
+      margin-right: 5%;
+    }
+    @media (max-width: 1072px) {
+      .download {
+        margin-top: 20%;
+      }
+    }
+    @media (max-width: 830px) {
+      .download {
+        margin-top: 25%;
+      }
+    }
+    @media (max-width: 590px) {
+      .download {
+        display: block;
+      }
+      .div-content .download-btn {
+        display: block;
+      }
+      .div-content .download-btn .p480 {
+        width: 100%;
+      }
+      .div-content .download-btn .p720 {
+        width: 100%;
+        margin-top: 120px;
+      }
+      .download {
+        display: flex;
+      }
+      .download-text {
+        display: block;
+        height: inherit;
+        margin: 0%;
+      }
+      .download-text .textz{
+        margin-top: 3%;
+        text-align: center;
+        width: 100%;
+      }
+      .download-text .texty{
+        margin-top: 135px;
+        text-align: center;
+        width: 100%;
+      }
+      .div-content .text1{
+        margin-top: 15%;
+      }
+    }
+    @media (max-width: 480px){
+      .div-content .text1 h1{
+        font-size: 28px;
+      }
+      .div-content .text2{
+        font-size: 20px;
+      }
+      .div-content .download-btn .p480 a{
+        font-size: 32px;
+      }
+      .div-content .download-btn .p720 a{
+        font-size: 32px;
+      }
+    }
+    @media (max-width: 420px){
+      .div-content .text1 h1{
+        font-size: 25px;
+      }
+      .div-content .text2{
+        font-size: 18px;
+      }
+      .div-content .download-btn .p480 a{
+        font-size: 32px;
+      }
+      .div-content .download-btn .p720 a{
+        font-size: 32px;
+      }
+      .download-text .textz{
+       font-size: 22px;
+      }
+      .download-text .texty{
+   font-size: 22px;
+      }
+      .div-content{
+        margin-top: 25%;
+      }
+      .download{
+        margin-top: 40%;
+      }
+    }
+  </style>
+</html>

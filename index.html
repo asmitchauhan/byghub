@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, user-scalable=no" />
+    <title>BygHub</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato&family=Oswald:wght@500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <header>
+      <div class="div-logo">
+        <a href="#">BygHub</a>
+      </div>
+      <div class="div-search">
+        <div class="search">
+          <div class="icon"></div>
+          <div class="input">
+            <input
+              type="text"
+              value=""
+              placeholder="Search"
+              id="search"
+              onchange="openPage()"
+            />
+            <span
+              class="clear"
+              onclick="document.getElementById('search').value = ''"
+            ></span>
+          </div>
+        </div>
+
+        <div class="searchz active">
+          <div class="icon"></div>
+          <div class="input">
+            <input
+              type="text"
+              value=""
+              placeholder="Search"
+              id="searchz"
+              onchange="openPagez()"
+            />
+            <span
+              class="clear"
+              onclick="document.getElementById('searchz').value = ''"
+            ></span>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="head"></div>
+    <div class="div-content">
+      <div class="text-active">
+        <h1>Tadap</h1>
+      </div>
+      <div class="div-img">
+        <img src="tadap.jpg" />
+      </div>
+      <div class="div-text">
+        <div class="text1">
+          <h1>Tadap</h1>
+        </div>
+        <div class="text2">
+          <h3>HINDI 2021</h3>
+        </div>
+        <div class="text3">
+          Tadap is a 2021 Indian Hindi-language romantic action drama film
+          directed by Milan Luthria and produced by Sajid Nadiadwala under the
+          Nadiadwala Grandson Entertainment banner, with Fox Star Studios
+          serving as distributor and co-producer.[5] A remake of the Telugu film
+          RX 100 (2018), the film stars debutant Ahan Shetty and Tara
+          Sutaria.[6] The film released theatrically on 3 December 2021.
+        </div>
+        <div class="download-btn">
+          <a href="downloadpage-tadap.html">Download</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="div-content">
+      <div class="text-active">
+        <h1>Pushpa Part-1</h1>
+      </div>
+      <div class="div-img">
+        <img src="pushpa.jpeg" />
+      </div>
+      <div class="div-text">
+        <div class="text1">
+          <h1>Pushpa Part-1</h1>
+        </div>
+        <div class="text2">
+          <h3>HINDI 2021</h3>
+        </div>
+        <div class="text3">
+          Pushpa: The Rise – Part 01 is a 2021 Indian Telugu-language action
+          drama film[5] written and directed by Sukumar. Produced by Mythri
+          Movie Makers in association with Muttamsetty Media, it stars Allu
+          Arjun as the titular character alongside Fahadh Faasil (in his Telugu
+          debut) and Rashmika Mandanna while Jagadeesh Prathap Bandari, Sunil,
+          Rao Ramesh, Dhananjaya, Anasuya Bharadwaj, Ajay and Ajay Ghosh play
+          supporting roles. The first of two cinematic parts, the film depicts
+          the rise of a coolie in the smuggling syndicate of red sanders, a rare
+          wood that grows only in the Seshachalam Hills of Andhra Pradesh state.
+        </div>
+        <div class="download-btn">
+          <a href="downloadpage-pushpa.html">Download</a>
+        </div>
+      </div>
+    </div>
+    <div class="div-content">
+      <div class="text-active">
+        <h1>Loop Lapeta</h1>
+      </div>
+      <div class="div-img">
+        <img src="looplapeta.jpeg" />
+      </div>
+      <div class="div-text">
+        <div class="text1">
+          <h1>Loop Lapeta</h1>
+        </div>
+        <div class="text2">
+          <h3>HINDI 2022</h3>
+        </div>
+        <div class="text3">
+          Looop Lapeta is 2022 Indian Hindi-language comedy thriller film
+          directed by Aakash Bhatia and jointly produced by Sony Pictures Films
+          India, Ellipsis Entertainment and Aayush Maheshwari. The film features
+          Taapsee Pannu and Tahir Raj Bhasin in the lead roles.[3][4] The film
+          is the official Indian adaptation of German film Run Lola Run.[5][6]
+          The film premiered on 4 February 2022 on Netflix.[7]
+        </div>
+        <div class="download-btn">
+          <a href="downloadpage-looplapeta.html">Download</a>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <ul>
+        <li>
+          <a href="https://www.facebook.com/profile.php?id=100075490164894" target="_blank"><img src="facebook.svg" /></a>
+        </li>
+        <li>
+          <a href="https://www.instagram.com/_like.this.only_/" target="_blank"><img src="instagram.svg" /></a>
+        </li>
+        <li>
+          <a href="https://twitter.com/_asmit_chauhan_" target="_blank"><img src="twitter.svg" /></a>
+        </li>
+        <li>
+          <a href="https://github.com/asmitchauhan" target="_blank"><img src="github.svg" /></a>
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/in/asmit-chauhan-64685222a/" target="_blank"><img src="linkedin.svg" /></a>
+        </li>
+      </ul>
+    </footer>
+  </body>
+  <script>
+    const icon = document.querySelector(".icon");
+    const search = document.querySelector(".search");
+    icon.onclick = function () {
+      search.classList.toggle("active");
+    };
+
+    function openPagez() {
+      var x = document.getElementById("searchz").value;
+      if (x === "tadap" || x === "Tadap" || x === "TADAP" ) {
+        window.open("downloadpage-tadap.html");
+      }
+
+      if (x === "pushpa" || x === "Pushpa" || x === "PUSHPA" ) {
+        window.open("downloadpage-pushpa.html");
+      }
+      if (x === "loop lapeta" || x === "Loop lapeta" || x === "Loop Lapeta" || x === "LOOP LAPETA") {
+        window.open("downloadpage-looplapeta.html");
+      }
+    }
+
+
+
+
+    function openPage() {
+      var x = document.getElementById("search").value;
+      if (x === "tadap" || x === "Tadap" || x === "TADAP" ) {
+        window.open("downloadpage-tadap.html");
+      }
+      if (x === "pushpa" || x === "Pushpa" || x === "PUSHPA" ) {
+        window.open("downloadpage-pushpa.html");
+      }
+      if (x === "loop lapeta" || x === "Loop lapeta" || x === "Loop Lapeta" || x === "LOOP LAPETA") {
+        window.open("downloadpage-looplapeta.html");
+      }
+    }
+  </script>
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+    }
+
+    body {
+      background-color: #000;
+    }
+
+    ::-webkit-scrollbar {
+      width: 10px;
+    }
+
+    ::-webkit-scrollbar-track {
+      background: #fff;
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background: #f5c518;
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+      background: #bb9200;
+    }
+
+    header {
+      height: 60px;
+      width: 100%;
+      display: flex;
+      position: fixed;
+      background-color: #121212;
+    }
+
+    .div-logo {
+      height: 100%;
+      width: 20%;
+      text-align: center;
+    }
+    .head {
+      height: 60px;
+      width: 100%;
+      background-color: black;
+    }
+    .div-search {
+      height: 100%;
+      width: 80%;
+    }
+
+    header .div-logo a {
+      text-decoration: none;
+      color: #000;
+      padding: 3px 5px 3px 5px;
+      font-size: 22px;
+      background-color: #f5c518;
+      border-radius: 4px;
+      line-height: 60px;
+      font-family: "Lato", sans-serif;
+      font-family: "Oswald", sans-serif;
+    }
+
+    header .div-search .search {
+      position: absolute;
+      right: calc(-100% + 10%);
+      width: 50px;
+      height: 50px;
+      border-radius: 60px;
+      background-color: #fff;
+      transition: 0.5s;
+      margin: auto;
+      margin-top: 5px;
+      margin-right: calc(100% + 0px);
+      cursor: pointer;
+      overflow: hidden;
+    }
+
+    header .div-search .search.active {
+      width: 360px;
+    }
+
+    header .div-search .search .icon {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 50px;
+      height: 50px;
+      background-color: #f5c518;
+      border-radius: 60px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transition: 0.2s ease;
+    }
+
+    header .div-search .search .icon::before {
+      content: "";
+      position: absolute;
+      width: 15px;
+      height: 15px;
+      border: 3px solid #121212;
+      border-radius: 50%;
+      transform: translate(-4px, -4px);
+    }
+
+    header .div-search .search .icon::after {
+      content: "";
+      position: absolute;
+      width: 3px;
+      height: 12px;
+      background-color: #121212;
+      transform: translate(6px, 6px) rotate(315deg);
+    }
+
+    header .div-search .search .input {
+      position: relative;
+      width: calc(100% - 60px);
+      height: 50px;
+      left: 60px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+    }
+
+    header .div-search .search .input input {
+      position: absolute;
+      top: 0;
+      width: 100%;
+      height: 50px;
+      border: none;
+      outline: none;
+      font-size: 18px;
+      padding: 0 10px;
+      font-family: "Roboto", sans-serif;
+    }
+
+    header .div-search .search .clear {
+      position: absolute;
+      transform: translate(-50%);
+      width: 18px;
+      height: 18px;
+      right: 15px;
+      top: 17.5px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    header .div-search .search .clear::before {
+      position: absolute;
+      content: "";
+      width: 2px;
+      height: 18px;
+      background-color: #f5c518;
+      transform: rotate(45deg);
+    }
+
+    header .div-search .search .clear::after {
+      position: absolute;
+      content: "";
+      width: 2px;
+      height: 18px;
+      background-color: #f5c518;
+      transform: rotate(315deg);
+    }
+
+    header .div-search .search {
+      display: none;
+    }
+
+    header .div-search .searchz {
+      position: absolute;
+      right: calc(-100% + 10%);
+      width: 50px;
+      height: 50px;
+      border-radius: 60px;
+      background-color: #fff;
+      transition: 0.5s;
+      margin: auto;
+      margin-top: 5px;
+      margin-right: calc(100% + 0px);
+      cursor: pointer;
+      overflow: hidden;
+    }
+
+    header .div-search .searchz.active {
+      width: 360px;
+    }
+
+    header .div-search .searchz .icon {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 50px;
+      height: 50px;
+      background-color: #f5c518;
+      border-radius: 60px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transition: 0.2s ease;
+    }
+
+    header .div-search .searchz .icon::before {
+      content: "";
+      position: absolute;
+      width: 15px;
+      height: 15px;
+      border: 3px solid #121212;
+      border-radius: 50%;
+      transform: translate(-4px, -4px);
+    }
+
+    header .div-search .searchz .icon::after {
+      content: "";
+      position: absolute;
+      width: 3px;
+      height: 12px;
+      background-color: #121212;
+      transform: translate(6px, 6px) rotate(315deg);
+    }
+
+    header .div-search .searchz .input {
+      position: relative;
+      width: calc(100% - 60px);
+      height: 50px;
+      left: 60px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+    }
+
+    header .div-search .searchz .input input {
+      position: absolute;
+      top: 0;
+      width: 100%;
+      height: 50px;
+      border: none;
+      outline: none;
+      font-size: 18px;
+      padding: 0 10px;
+      font-family: "Roboto", sans-serif;
+    }
+
+    header .div-search .searchz .clear {
+      position: absolute;
+      transform: translate(-50%);
+      width: 18px;
+      height: 18px;
+      right: 15px;
+      top: 17.5px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    header .div-search .searchz .clear::before {
+      position: absolute;
+      content: "";
+      width: 2px;
+      height: 18px;
+      background-color: #f5c518;
+      transform: rotate(45deg);
+    }
+
+    header .div-search .searchz .clear::after {
+      position: absolute;
+      content: "";
+      width: 2px;
+      height: 18px;
+      background-color: #f5c518;
+      transform: rotate(315deg);
+    }
+    .div-content {
+      display: flex;
+      margin-top: 6%;
+      margin-left: 5%;
+      margin-right: 5%;
+    }
+    .div-content .div-img {
+      height: 100%;
+      width: 70%;
+    }
+    .div-content .div-img img {
+      height: 90%;
+      width: 90%;
+      box-shadow: #121212 0px 0px 10px 10px;
+    }
+    .div-content .div-text {
+      height: 100%;
+      width: 30%;
+    }
+    .div-content .div-text .text1 {
+      text-align: center;
+    }
+    .div-content .text-active {
+      height: 100%;
+      width: 100%;
+      display: none;
+    }
+    .div-content .div-text .text1 h1 {
+      color: #fff;
+      font-size: 38px;
+      font-family: "Roboto", sans-serif;
+      letter-spacing: 1px;
+    }
+    .div-content .text-active h1 {
+      color: #fff;
+      font-size: 38px;
+      font-family: "Roboto", sans-serif;
+      letter-spacing: 1px;
+    }
+    .div-content .div-text .text2 {
+      margin-top: 10%;
+    }
+    .div-content .div-text .text2 h3 {
+      color: rgba(255, 255, 255, 0.329);
+      font-size: 18px;
+      font-family: "Roboto", sans-serif;
+      letter-spacing: 1px;
+      margin-left: 7%;
+    }
+    .div-content .div-text .text3 {
+      font-size: 16px;
+      color: #fff;
+      font-family: "Roboto", sans-serif;
+      text-align: justify;
+      margin-left: 7%;
+      margin-right: 7%;
+      margin-top: 10%;
+      letter-spacing: 1px;
+      height: inherit;
+      width: 100%;
+    }
+    .div-content .div-text .download-btn {
+      margin-top: 15%;
+      text-align: center;
+    }
+    .div-content .div-text .download-btn a {
+      color: #000;
+      text-decoration: none;
+      padding: 10px;
+      background-color: #f5c518;
+      border-radius: 4px;
+      font-size: 38px;
+      font-family: "Roboto", sans-serif;
+      transition: 0.2s ease;
+    }
+    .div-content .div-text .download-btn a:hover {
+      background-color: #bb9200;
+    }
+
+    footer {
+      height: 40px;
+      width: 100%;
+      background-color: #121212;
+      display: flex;
+      margin-top: 10%;
+    }
+    footer ul {
+      display: flex;
+      list-style: none;
+      height: 40px;
+      margin: auto;
+    }
+    footer ul li {
+      line-height: 50px;
+      margin-left: 10px;
+      margin-right: 10px;
+      color: #fff;
+    }
+    footer ul li img {
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      transition: 0.2s ease;
+    }
+    footer ul li img:hover {
+      filter: brightness(70%);
+    }
+
+    @media (max-width: 864px) {
+      header .div-search .searchz {
+        display: none;
+      }
+
+      header .div-search .search {
+        display: block;
+      }
+    }
+
+    @media (max-width: 666px) {
+      header .div-search .search.active {
+        width: 80%;
+      }
+      header .div-logo {
+        text-align: right;
+        width: 35%;
+      }
+      header .div-search {
+        width: 65%;
+      }
+    }
+
+    @media (max-width: 1115px) {
+      .div-content .div-text .text1 h1 {
+        font-size: 34px;
+      }
+      .div-content .div-text .text3 {
+        font-size: 15px;
+      }
+      .div-content .div-text .text3 {
+        letter-spacing: 0.5px;
+        text-align: left;
+      }
+      .div-content .div-img img {
+        height: 100%;
+        width: 100%;
+      }
+    }
+    @media (max-width: 1078px) {
+      .div-content .div-text .text1 h1 {
+        font-size: 32px;
+      }
+      .div-content .div-text .download-btn a {
+        font-size: 34px;
+      }
+    }
+    @media (max-width: 1018px) {
+      .div-content .div-text .text1 h1 {
+        font-size: 30px;
+      }
+      .div-content .div-text .text3 {
+        font-size: 14px;
+      }
+      .div-content .div-text .text2 {
+        margin-top: 6%;
+      }
+      .div-content .div-text .text2 h3 {
+        font-size: 16px;
+      }
+    }
+    @media (max-width: 996px) {
+      .div-content {
+        display: block;
+      }
+      .div-content .div-text .text1 {
+        display: none;
+      }
+      .div-content .text-active {
+        display: block;
+      }
+      .div-content .div-img {
+        margin-top: 4%;
+        width: 100%;
+      }
+      .div-content .div-text {
+        width: 100%;
+      }
+      .div-content .div-text .text3 {
+        margin-left: 0;
+        letter-spacing: 1px;
+      }
+    }
+    @media (max-width: 822px) {
+      .div-content {
+        margin-top: 20%;
+      }
+    }
+    @media (max-width: 490px) {
+      .div-content .text-active h1 {
+        font-size: 28px;
+      }
+    }
+  </style>
+</html>
